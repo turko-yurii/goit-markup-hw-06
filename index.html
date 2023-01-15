@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework-4</title>
+    <title>homework-6</title>
     
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -349,6 +349,20 @@
         </li>
       </ul>
     </div>
+        <div>
+        <h3 class="sub">Subscribe</h3> 
+        <form class="sub-form">
+            <label >
+                <input class="sub-input" type="mail" name="user-email" type="email" placeholder="E-mail"/>
+            </label>
+            <button class="sub-button" type="submit">
+                Subscribe
+                <svg class="sub-svg">
+                    <use href="./image/icon.svg#icon-send"></use>
+                </svg>
+            </button>
+        </form>
+        </div>
     </div>
 </footer>
 <!--Modal-->
@@ -359,6 +373,83 @@
                 <use href="./image/icon.svg#icon-close"></use>
             </svg>
         </button>
+        <form class="modal-form">
+            <p class="modal-p">Leave your contacts and we will call you back</p>
+            <label class="modal-form-l">
+                <span class="modal-name">Name</span>
+                <span class="modal-form-input">
+                    <input 
+                    class="modal-form-inputt"
+                    name="user-name"
+                    type="text"
+                    required
+                    pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                    minlength="2"
+                    />
+                    <svg class="modal-input-icon">
+                        <use href="./image/icon.svg#icon-person"></use>
+                    </svg>
+                </span>
+            </label>
+
+            <label class="modal-form-l">
+                <span class="modal-name">Phone</span>
+                <span class="modal-form-input">
+                    <input 
+                    class="modal-form-inputt"
+                    name="user-phone"
+                    type="tel"
+                    required
+                    pattern="\+\[0-9]{12}"
+                    title="+38XXXXXXXXXX"
+                    maxlength="13"
+                    />
+                    <svg class="modal-input-icon">
+                        <use href="./image/icon.svg#icon-phone"></use>
+                    </svg>
+                </span>
+            </label> 
+
+            <label class="modal-form-l">
+                <span class="modal-name">Email</span>
+                <span class="modal-form-input">
+                    <input 
+                    class="modal-form-inputt"
+                    name="user-email"
+                    type="email"
+                    />
+                    <svg class="modal-input-icon">
+                        <use href="./image/icon.svg#icon-email"></use>
+                    </svg>
+                </span>
+            </label> 
+
+            <label class="modal-form-l margin">
+                <span class="modal-name">Comment</span>
+                <textarea 
+                class="modal-comment"
+                name="user-massage"
+                placeholder="Text input"
+                ></textarea>
+            </label>
+            
+            <label class="modal-checkbox">
+                <span class="modal-checkbox-wr">
+                    <input class="modal-checkbox-hiden hiden" name="policy" type="checkbox" value="policy">
+                 <span class="modal-check">
+                    <svg class="modal-check-svg">
+                        <use href="./image/icon.svg#checkbox"></use>
+                    </svg>
+                 </span>
+                 <span class="policy-text">
+                    I accept the terms and conditions of the
+                    <a class="policy-link" href="#">Privacy Policy</a>
+                 </span>
+                </span>
+            </label>
+
+            <button class="modal-send" type="submit">Send</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
